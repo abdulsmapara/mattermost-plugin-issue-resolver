@@ -403,7 +403,7 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 	return map[string]string{
 		"Found":   "false",
 		"Error":   "false",
-		"Message": "User not found " + strings.TrimSpace(commonSkills),
+		"Message": "User not found ",
 	}
 }
 
