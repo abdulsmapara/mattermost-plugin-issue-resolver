@@ -134,7 +134,7 @@ func searchStackOverflow(userQuery string) map[string]string {
 		},
 	})
 	html2md.AddRule("", &html2md.Rule{
-		Patterns: []string{"</code>", "</ code>"},
+		Patterns: []string{"</code>"},
 		Tp:       html2md.Void,
 		Replacement: func(innerHTML string, attrs []string) string {
 			return "```"
@@ -183,7 +183,7 @@ func (p *Plugin) executeCommandSkills(args *model.CommandArgs) *model.CommandRes
 	case "list":
 		returnMessage := "Available Skills:\n[ "
 		pattern := strings.TrimPrefix(args.Command, "/"+commandUpdateSkills+" list")
-		pattern = strings.TrimSpace(pattern)
+		pattern = strings.TrimSpace(strings.ToUpper(pattern))
 		for _, skill := range strings.Split(arrayOfSkills, ",") {
 			if pattern == "" {
 				returnMessage += skill + ","
@@ -334,11 +334,15 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 	preprocessedString := preprocessQuery(userQuery)
 	setOfWords := mapset.NewSet()
 	for _, word := range strings.Split(preprocessedString, " ") {
-		setOfWords.Add(word)
+		setOfWords.Add(strings.ToUpper(strings.TrimSpace(word)))
 	}
 	common := setOfWords.Intersect(p.allSkills)
 	commonSkills := common.String()
 	commonSkills = commonSkills[4 : len(commonSkills)-1]
+	atleastOneReq := false
+	if commonSkills != "" {
+		atleastOneReq = true
+	}
 	skillsForQuery := strings.Split(commonSkills, ",")
 
 	users, err := p.API.KVList(0, 500)
@@ -364,6 +368,7 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 				foundAll := true
 
 				for _, skillReq := range skillsForQuery {
+
 					foundThisSkill := false
 					for _, skill := range skillsOfUser {
 						if strings.ToUpper(strings.TrimSpace(skillReq)) == skill {
@@ -376,7 +381,7 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 						break
 					}
 				}
-				if foundAll {
+				if foundAll && atleastOneReq {
 					userInfo, err := p.API.GetUser(user)
 					if err != nil {
 						return map[string]string{
@@ -414,7 +419,7 @@ func (p *Plugin) searchStackOverflow(args *model.CommandArgs) *model.CommandResp
 		if skilledUserInfo["Found"] == "true" {
 			msg += "###### SUGGESTION: \n" + skilledUserInfo["Message"]
 		} else {
-			msg += "Sorry, the issue could not be resolved.\nTry asking me by including specific keywords. " + skilledUserInfo["Message"]
+			msg += "Sorry, the issue could not be resolved.\nTry asking me by including specific keywords. "
 		}
 	}
 	post := &model.Post{
