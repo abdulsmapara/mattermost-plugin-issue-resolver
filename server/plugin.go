@@ -53,7 +53,7 @@ func (p *Plugin) ExecuteCommand(c *plugin.Context, args *model.CommandArgs) (*mo
 }
 
 func preprocessQuery(userQuery string) (preprocessedString string) {
-	reg, err := regexp.Compile("[^a-zA-Z]+")
+	reg, err := regexp.Compile("[^a-zA-Z+]+")
 	if err != nil {
 		// on failure return original query
 		return userQuery
@@ -181,23 +181,23 @@ func (p *Plugin) executeCommandSkills(args *model.CommandArgs) *model.CommandRes
 			Text:         yourSkills,
 		}
 	case "list":
-		returnMessage := "Available Skills:\n[ "
+		returnMessage := ""
 		pattern := strings.TrimPrefix(args.Command, "/"+commandUpdateSkills+" list")
-		pattern = strings.TrimSpace(strings.ToUpper(pattern))
+		pattern = strings.TrimSpace(pattern)
 		for _, skill := range strings.Split(arrayOfSkills, ",") {
 			if pattern == "" {
 				returnMessage += skill + ","
 			} else {
-				if strings.HasPrefix(skill, strings.ToUpper(pattern)) {
+				// fmt.Printf("[ " + skill + ", " + pattern + " ]")
+				// fmt.Println(strings.HasPrefix(strings.TrimSpace(skill), strings.ToUpper(pattern)))
+				if strings.HasPrefix(strings.TrimSpace(skill), strings.ToUpper(pattern)) {
 					returnMessage += skill + ","
 				}
 			}
-
 		}
-		returnMessage += "]"
 		return &model.CommandResponse{
 			ResponseType: model.COMMAND_RESPONSE_TYPE_EPHEMERAL,
-			Text:         returnMessage,
+			Text:         "Available skills for the pattern " + pattern + " [ " + returnMessage + " ]",
 		}
 
 	case "add":
@@ -331,7 +331,7 @@ func (p *Plugin) executeCommandSkills(args *model.CommandArgs) *model.CommandRes
 
 // getSkilledUsers TODO
 func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]string {
-	preprocessedString := preprocessQuery(userQuery)
+	preprocessedString := preprocessQuery(strings.TrimSpace(userQuery))
 	setOfWords := mapset.NewSet()
 	for _, word := range strings.Split(preprocessedString, " ") {
 		setOfWords.Add(strings.ToUpper(strings.TrimSpace(word)))
@@ -343,7 +343,7 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 	if commonSkills != "" {
 		atleastOneReq = true
 	}
-	skillsForQuery := strings.Split(commonSkills, ",")
+	skillsForQuery := strings.Split(strings.TrimSpace(commonSkills), ",")
 
 	users, err := p.API.KVList(0, 500)
 	if err != nil {
@@ -403,7 +403,7 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 	return map[string]string{
 		"Found":   "false",
 		"Error":   "false",
-		"Message": "User not found ",
+		"Message": "User not found " + strings.TrimSpace(commonSkills),
 	}
 }
 
@@ -419,6 +419,7 @@ func (p *Plugin) searchStackOverflow(args *model.CommandArgs) *model.CommandResp
 		if skilledUserInfo["Found"] == "true" {
 			msg += "###### SUGGESTION: \n" + skilledUserInfo["Message"]
 		} else {
+			fmt.Printf(skilledUserInfo["Message"])
 			msg += "Sorry, the issue could not be resolved.\nTry asking me by including specific keywords. "
 		}
 	}
