@@ -8,7 +8,7 @@
 - [About-the-plugin](#about-the-plugin)
 - [Installation](#installation)
 - [Running up](#running-up)
-	- **[Managing Skills](#managing-skills)
+	- [Managing Skills](#managing-skills)
 ## About the plugin
 This plugin helps resolve issues directly through Mattermost application. It enables the users to get solutions to their issues/questions if found similar/related question is found on [stackoverflow](https://www.stackoverflow.com). If a similar/related question is not found on [stackoverflow](https://www.stackoverflow.com), it suggests contacting a user who is skilled in the domain of the question/issue.
 ## Installation
@@ -18,7 +18,7 @@ Download the latest version of the [release](https://github.com/abdulsmapara/mat
 
 
 ## Running up
-	 + ## Managing Skills
+	## Managing Skills
 		1. The plugin suggests contacting a user who is skilled in the domain of the question/issue posted if a similar/related issue/question is not found on [stackoverflow](https://www.stackoverflow.com). 
 		1. In order to accomplish the above mentioned task, users are required to update their skills.
 		1. In order to manage his/her skills, the user should use the slash command ```/skills``` and an optional command along with it. 
