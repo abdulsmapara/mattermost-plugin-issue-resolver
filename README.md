@@ -52,7 +52,6 @@ In order to manage his/her skills, the user should use the slash command ```/ski
 1. ```/resolve <issue/question>```
 
 Issue/Question will be searched on stackoverflow. If a similar question/issue is found that has an accepted answer on stackoverflow, then the issue_resolver bot will reply with the question found and the accepted solution.
-<<<<<<< HEAD
 
 If a similar question/issue with an accepted answer is not found, then a user will be searched who possesses the skill for resolving the issue. If such a user is found, the username of the user found is suggested by the bot for contact. 
 =======
@@ -62,6 +61,3 @@ If a similar question/issue with an accepted answer is not found, then a user wi
 #### Idea Phase Submission
 
 - Link to the ppt describing the idea - [Idea Presentation](https://he-s3.s3.amazonaws.com/media/sprint/mattermost-bot-hackfest/team/782765/8a5bcbfcodeblooded_mattermost_hackfest.pptx?Signature=YZdp812LgWXUaiup1j5GYe4TKQ8%3D&Expires=1583010208&AWSAccessKeyId=AKIA6I2ISGOYH7WWS3G5)
-
-
->>>>>>> 2470861f3a694295207e2d79ae16ca66e8867e16
