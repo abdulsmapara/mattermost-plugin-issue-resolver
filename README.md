@@ -20,10 +20,17 @@ Download the latest version of the [release](https://github.com/abdulsmapara/mat
 
 ## Working
 1. This plugin works with the help of slash commands. Headover to any channel and write the slash command ```/resolve``` followed by your issue/question.
-1. If a similar question/issue is found that has an accepted answer on [stackoverflow](https://www.stackoverflow.com/), then the issue_resolver bot will reply with the question found and the accepted solution.
-The following screenshot shows that the user's issue was "Java: Array Index Out of Bounds" which is searched on stackoverflow, and the complete question (along with its title) and the accepted solution on stackoverflow is fetched and displayed to the user by the bot. 
+1. If a similar question/issue is found (that has an accepted answer) on stackoverflow, then the issue_resolver bot will reply with the question found and the accepted solution.
+The following screenshot(s) show that the user's issue was "Java: Array Index Out of Bounds" which is searched on stackoverflow, and the complete question (along with its title) and the accepted solution on stackoverflow is fetched and displayed to the user by the bot. 
+![User's issue](https://drive.google.com/open?id=1cjntMynrKxl-RP5U3sHL1d4HvrwZqO0I)
+![Similar/Related Question Found](https://drive.google.com/open?id=1sM0QVFEN87oV5rek5sNozSrgybuurjDq)
+![Accepted Solution](https://drive.google.com/open?id=1Fh4Yali4fe49dzvu5iZWK9qZFXSRQtyP)
+
 1. If a similar question/issue is not found or there is no accepted answer for the question on stackoverflow, then the bot tries to return a user who possesses the skill required to solve the issue.
-The following screenshot shows that the user's issue was "", which we understand requires the skill "Java". The bot suggests a user who has mentioned "Java" as one of his skills.
+
+The following screenshot shows that the user's issue was "call c function from app python", which we understand requires the skills "C, Python". The bot suggests a user who has mentioned "C, Python" among his/her skills.
+![Suggestion-to-contact-a-User](https://drive.google.com/open?id=1vZJFZpR3SA6C2pznnfq73-WCdCYh8K5Z)
+
 ## Features
 #### Slash Commands
 1. ```/skills```
