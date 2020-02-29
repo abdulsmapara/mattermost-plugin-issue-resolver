@@ -8,7 +8,7 @@
 - [About-the-plugin](#about-the-plugin)
 - [Installation](#installation)
 - [Running up](#running-up)
-	-**[Managing Skills](#managing-skills)
+	- **[Managing Skills](#managing-skills)
 ## About the plugin
 This plugin helps resolve issues directly through Mattermost application. It enables the users to get solutions to their issues/questions if found similar/related question is found on [stackoverflow](https://www.stackoverflow.com). If a similar/related question is not found on [stackoverflow](https://www.stackoverflow.com), it suggests contacting a user who is skilled in the domain of the question/issue.
 ## Installation
