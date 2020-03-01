@@ -12,8 +12,8 @@
 	* [Resolving the issue](#resolving-the-issue)
 - [Features](#features)
     * [Slash Commands](#slash-commands)
-        + [```/skills```](#skills)
-        + [```/resolve```](#resolve)
+        + ```/skills```
+        + ```/resolve```
 - [Hackathon-Mattermost-bot-hackfest](#hackathon-mattermost-bot-hackfest)
      * [Idea Phase Submission](#idea-phase-submission)
 - [Additional Info](#additional-info)
