@@ -53,12 +53,13 @@ func (p *Plugin) ExecuteCommand(c *plugin.Context, args *model.CommandArgs) (*mo
 }
 
 func preprocessQuery(userQuery string) (preprocessedString string) {
-	reg, err := regexp.Compile("[^a-zA-Z+]+")
+	reg, err := regexp.Compile("[^a-zA-Z+#_]+")
 	if err != nil {
 		// on failure return original query
 		return userQuery
 	}
 	preprocessedString = reg.ReplaceAllString(userQuery, " ")
+	fmt.Println("preprocessedString " + preprocessedString)
 	return preprocessedString
 }
 func processQuery(userQuery string) (keywords string) {
@@ -344,7 +345,7 @@ func (p *Plugin) getSkilledUsers(userQuery string, selfID string) map[string]str
 		atleastOneReq = true
 	}
 	skillsForQuery := strings.Split(strings.TrimSpace(commonSkills), ",")
-
+	fmt.Println(skillsForQuery)
 	users, err := p.API.KVList(0, 500)
 	if err != nil {
 		return map[string]string{
@@ -420,7 +421,7 @@ func (p *Plugin) searchStackOverflow(args *model.CommandArgs) *model.CommandResp
 			msg += "###### SUGGESTION: \n" + skilledUserInfo["Message"]
 		} else {
 			fmt.Printf(skilledUserInfo["Message"])
-			msg += "Sorry, the issue could not be resolved.\nTry asking me by including specific keywords. "
+			msg += "Sorry, the issue could not be resolved.\nA few tips that will help me:\nTry asking me by including specific keywords.\nFor multiword skills, try to seperate words with underscore. Example: Java_Servlets."
 		}
 	}
 	post := &model.Post{
