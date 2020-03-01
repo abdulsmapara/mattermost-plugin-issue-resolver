@@ -16,6 +16,8 @@
         + ```/resolve```
 - [Hackathon-Mattermost-bot-hackfest](#hackathon-mattermost-bot-hackfest)
      * [Idea Phase Submission](#idea-phase-submission)
+     * [Project Submission](#project-submission)
+- [Demo Video](#demo-video)
 - [Additional Info](#additional-info)
 
 ## About the plugin
@@ -75,8 +77,15 @@ The GIF below depicts the usage of ```/resolve```
 
 - Link to the ppt describing the idea - [Idea Presentation](https://he-s3.s3.amazonaws.com/media/sprint/mattermost-bot-hackfest/team/782765/8a5bcbfcodeblooded_mattermost_hackfest.pptx?Signature=QVDAn%2F2SPbab8UJbYXv2Jb%2FWjBA%3D&Expires=1583084663&AWSAccessKeyId=AKIA6I2ISGOYH7WWS3G5)
 
+#### Project Submission
 
+- Link to the submitted file - [File for project submission](https://github.com/mattermost/mattermost-hackathon-hackerearth-jan2020/blob/master/hackathon-submissions/abdulsmapara-mattermost-plugin-issue-resolver.md)
 
+- Link to the pull request for submitting the project - [Project Submission](https://github.com/mattermost/mattermost-hackathon-hackerearth-jan2020/pull/13)
+
+## Demo Video
+
+Link - [https://vimeo.com/394781065/](https://vimeo.com/394781065/)
 
 ## Additional Info
 
