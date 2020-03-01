@@ -2,7 +2,7 @@
     "id": "com.mattermost.issue-resolver",
     "name": "issue-resolver",
     "description": "This is a plugin that helps to resolve issues directly through Mattermost application.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "min_server_version": "5.19.0",
     "server": {
         "executables": {
