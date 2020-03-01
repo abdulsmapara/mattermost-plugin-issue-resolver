@@ -30,15 +30,15 @@ Download the latest version of the [release](https://github.com/abdulsmapara/mat
 ## Working
 1. This plugin works with the help of slash commands. Headover to any channel and write the slash command ```/resolve``` followed by your issue/question.
 1. If a similar question/issue is found (that has an accepted answer) on stackoverflow, then the issue_resolver bot will reply with the question found and the accepted solution.
-The following screenshot(s) show that the user's issue was "Java: Array Index Out of Bounds" which is searched on stackoverflow, and the complete question (along with its title) and the accepted solution on stackoverflow is fetched and displayed to the user by the bot. 
-![User's issue](https://drive.google.com/uc?export=view&id=1cjntMynrKxl-RP5U3sHL1d4HvrwZqO0I)
-![Similar/Related Question Found](https://drive.google.com/uc?export=view&id=1sM0QVFEN87oV5rek5sNozSrgybuurjDq)
-![Accepted Solution](https://drive.google.com/uc?export=view&id=1Fh4Yali4fe49dzvu5iZWK9qZFXSRQtyP)
+The following screenshot(s) show that the user's issue was "/resolve Java: Array out of bounds exception" which is searched on stackoverflow, and the complete question (along with its title) and the accepted solution on stackoverflow is fetched and displayed to the user by the bot. 
+![User's issue](https://github.com/abdulsmapara/Github-Media/blob/master/screenshot1.png)
+![Similar/Related Question Found](https://github.com/abdulsmapara/Github-Media/blob/master/screenshot2.png)
+![Accepted Solution](https://github.com/abdulsmapara/Github-Media/blob/master/screenshot3.png)
 
 1. If a similar question/issue is not found or there is no accepted answer for the question on stackoverflow, then the bot tries to return a user who possesses the skill required to solve the issue.
 
 The following screenshot shows that the user's issue was "call c function from app python", which we understand requires the skills "C, Python". The bot suggests a user who has mentioned "C, Python" among his/her skills.
-![Suggestion-to-contact-a-User](https://drive.google.com/uc?export=view&id=1vZJFZpR3SA6C2pznnfq73-WCdCYh8K5Z)
+![Suggestion-to-contact-a-User](https://github.com/abdulsmapara/Github-Media/blob/master/screenshot4.png)
 
 ## Features
 #### Slash Commands
