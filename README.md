@@ -12,8 +12,8 @@
 	* [Resolving the issue](#resolving-the-issue)
 - [Features](#features)
     * [Slash Commands](#slash-commands)
-        + ```/skills```
-        + ```/resolve```
+        + [```/skills```](#skills)
+        + [```/resolve```](#resolve)
 - [Hackathon-Mattermost-bot-hackfest](#hackathon-mattermost-bot-hackfest)
      * [Idea Phase Submission](#idea-phase-submission)
 - [Additional Info](#additional-info)
@@ -42,22 +42,31 @@ The following screenshot shows that the user's issue was "call c function from a
 
 ## Features
 #### Slash Commands
-1. ```/skills```
+```/skills```
 
 The plugin suggests contacting a user who is skilled in the domain of the question/issue posted if a similar/related issue/question is not found on stackoverflow. In order to accomplish this task, users are required to update their skills.
+
 In order to manage his/her skills, the user should use the slash command ```/skills``` and an optional command along with it. 
+
 If no command is mentioned along with ```/skills```, the system lists the skills of the user stored.
-If the command ```list <prefix (optional)>``` is used, the system prints the list of skills any user can have that starts with the given prefix. (If no prefix is mentioned, all the skills are listed). That is, there is a huge predefined set of skills, that any user can have. 
+
+If the command ```list <prefix (optional)>``` is used, the system prints the list of skills any user can have that starts with the given prefix. (If no prefix is mentioned, all the possible skills are listed). That is, there is a huge predefined set of skills, that any user can have. 
+
 If the command ```add <comma separated list of skills>``` is used, the system adds all the skills for the user that are mentioned and are among the predefined list.
+
 If the command ```delete <comma separated list of skills>``` is used, the system deletes all the skills mentioned for the user if he/she possessed that skill beforehand.
+
 The GIF below depicts the usage of ```/skills```
 ![Usage of ```/skills```](https://drive.google.com/uc?export=view&id=1srTNFdYW9izKyFkr_enmT9UXKYBpp-sk)
-1. ```/resolve <issue/question>```
+
+```/resolve <issue/question>```
 
 The issue/question mentioned is searched on stackoverflow. If a similar question/issue is found that has an accepted answer on stackoverflow, then the issue_resolver bot will reply with the question found and the accepted solution.
 
 If a similar question/issue with an accepted answer is not found, then a user will be searched who possesses the skill for resolving the issue. If such a user is found, the username of the user found is suggested by the bot for contact. 
 The GIF below depicts the usage of ```/resolve```
+
+![Usage of ```/resolve```](https://drive.google.com/uc?export=view&id=1ZeZyoAHPE3ESpwG-u-va4FdfYNheZY_b)
 
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
 #### Idea Phase Submission
@@ -66,7 +75,11 @@ The GIF below depicts the usage of ```/resolve```
 
 
 
+
 ## Additional Info
 
+
 This plugin is created for demonstration of the idea submitted at [Mattermost Bot Hackfest](#hackathon-mattermost-bot-hackfest).
+
+
 The plugin is created by [@abdulsmapara](https://github.com/abdulsmapara).
