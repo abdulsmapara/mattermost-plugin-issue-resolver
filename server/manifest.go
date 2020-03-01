@@ -12,11 +12,11 @@ var manifest *model.Manifest
 
 const manifestStr = `
 {
-  "id": "com.mattermost.issue_resolver",
-  "name": "Plugin for resolving issues",
-  "description": "This is a plugin.",
-  "version": "0.1.0",
-  "min_server_version": "5.12.0",
+  "id": "com.mattermost.issue-resolver",
+  "name": "issue-resolver",
+  "description": "This is a plugin that helps to resolve issues directly through Mattermost application.",
+  "version": "0.1.1",
+  "min_server_version": "5.19.0",
   "server": {
     "executables": {
       "linux-amd64": "server/dist/plugin-linux-amd64",
