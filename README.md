@@ -37,7 +37,7 @@ The following screenshot(s) show that the user's issue was "/resolve Java: Array
 
 1. If a similar question/issue is not found or there is no accepted answer for the question on stackoverflow, then the bot tries to return a user who possesses the skill required to solve the issue.
 
-The following screenshot shows that the user's issue was "call c function from app python", which we understand requires the skills "C, Python". The bot suggests a user who has mentioned "C, Python" among his/her skills.
+The following screenshot shows that the user's issue was "call golang code from haskell", which we understand requires the skills "golang, haskell". The bot suggests a user who has mentioned "golang, haskell" among his/her skills.
 ![Suggestion-to-contact-a-User](https://github.com/abdulsmapara/Github-Media/blob/master/screenshot4.png)
 
 ## Features
@@ -57,7 +57,7 @@ If the command ```add <comma separated list of skills>``` is used, the system ad
 If the command ```delete <comma separated list of skills>``` is used, the system deletes all the skills mentioned for the user if he/she possessed that skill beforehand.
 
 The GIF below depicts the usage of ```/skills```
-![Usage of ```/skills```](https://drive.google.com/uc?export=view&id=1srTNFdYW9izKyFkr_enmT9UXKYBpp-sk)
+![Usage of ```/skills```](https://github.com/abdulsmapara/Github-Media/blob/master/gif1.gif)
 
 ```/resolve <issue/question>```
 
@@ -66,7 +66,7 @@ The issue/question mentioned is searched on stackoverflow. If a similar question
 If a similar question/issue with an accepted answer is not found, then a user will be searched who possesses the skill for resolving the issue. If such a user is found, the username of the user found is suggested by the bot for contact. 
 The GIF below depicts the usage of ```/resolve```
 
-![Usage of ```/resolve```](https://drive.google.com/uc?export=view&id=1ZeZyoAHPE3ESpwG-u-va4FdfYNheZY_b)
+![Usage of ```/resolve```](https://github.com/abdulsmapara/Github-Media/blob/master/gif2.gif)
 
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
 #### Idea Phase Submission
