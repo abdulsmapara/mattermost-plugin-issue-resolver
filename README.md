@@ -68,6 +68,11 @@ The GIF below depicts the usage of ```/resolve```
 
 ![Usage of ```/resolve```](https://github.com/abdulsmapara/Github-Media/blob/master/gif2.gif)
 
+###### Note : 
+1. The plugin logs important events at appropriate log levels.
+1. The plugin is tested on Mattermost Server version 5.19.0
+
+
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
 #### Idea Phase Submission
 
