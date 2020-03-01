@@ -73,7 +73,7 @@ The GIF below depicts the usage of ```/resolve```
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
 #### Idea Phase Submission
 
-- Link to the ppt describing the idea - [Idea Presentation](https://he-s3.s3.amazonaws.com/media/sprint/mattermost-bot-hackfest/team/782765/8a5bcbfcodeblooded_mattermost_hackfest.pptx?Signature=YZdp812LgWXUaiup1j5GYe4TKQ8%3D&Expires=1583010208&AWSAccessKeyId=AKIA6I2ISGOYH7WWS3G5)
+- Link to the ppt describing the idea - [Idea Presentation](https://he-s3.s3.amazonaws.com/media/sprint/mattermost-bot-hackfest/team/782765/8a5bcbfcodeblooded_mattermost_hackfest.pptx?Signature=QVDAn%2F2SPbab8UJbYXv2Jb%2FWjBA%3D&Expires=1583084663&AWSAccessKeyId=AKIA6I2ISGOYH7WWS3G5)
 
 
 
