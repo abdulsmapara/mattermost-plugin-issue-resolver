@@ -92,6 +92,7 @@ The GIF below depicts the usage of ```/resolve```
 	```
 
 1. If you want to deploy the plugin by using `System Console`:
+	
 	2. On the the server, in the file `config/config.json`, change `EnableUploads` in the `PLugin Settings` to `true`
 
 	2. Login to Mattermost server with admin privileges.
