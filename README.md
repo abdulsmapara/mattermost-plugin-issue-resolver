@@ -74,16 +74,34 @@ The GIF below depicts the usage of ```/resolve```
 
 ## Development
 
-This plugin contains only the server.
+1. This plugin contains only the server.
 
-Use `make` to check the style, test and build distributions of the plugin that you can upload to a Mattermost server.
+1. Use `make check-style` to check the style.
 
-On the the server, change `EnableUploads` in the `PLugin Settings` to `true` in the file `config/config.json`
+1. Use `make test` to test the plugin.
 
-Headover to `System Console` and upload the tar.gz file created in `dist/` directory to the plugins section.
+1. Use `make dist` to build distributions of the plugin that can be uploaded to a Mattermost server
+
+1. Alternatively, use `make` to check the style, test and build distributions of the plugin that you can upload to a Mattermost server (all at once).
+
+1. Use `make deploy` to deploy the plugin to your local server. Before running `make deploy`, you need to set a few environment variables:
+
+```
+	export MM_SERVICE_SETTINGS_SITEURL=http://localhost:8065
+	export MM_ADMIN_USERNAME=admin
+	export MM_ADMIN_PASSWORD=password
+```
+
+1. If you want to deploy the plugin by using `System Console`:
+
+2. On the the server, in the file `config/config.json`, change `EnableUploads` in the `PLugin Settings` to `true`
+
+2. Login to Mattermost server with admin privileges.
+
+2. Headover to `System Console` and upload the tar.gz file created in `dist/` directory to the plugins section.
 For help on how to install a custom plugin, please refer [installing custom plugin docs](https://docs.mattermost.com/administration/plugins.html#custom-plugins).
 
-Enable the plugin in the section `Installed Plugins` on the same page.
+2. Enable the plugin in the section `Installed Plugins` on the same page.
 
 
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
