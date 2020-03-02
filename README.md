@@ -14,6 +14,7 @@
     * [Slash Commands](#slash-commands)
         + ```/skills```
         + ```/resolve```
+- [Development](#development)
 - [Hackathon-Mattermost-bot-hackfest](#hackathon-mattermost-bot-hackfest)
      * [Idea Phase Submission](#idea-phase-submission)
      * [Project Submission](#project-submission)
@@ -70,6 +71,19 @@ The GIF below depicts the usage of ```/resolve```
 #### Note : 
 1. The plugin logs important events at appropriate log levels.
 1. The plugin is tested on [Mattermost Server version 5.19.0](https://github.com/mattermost/mattermost-server/releases/tag/v5.19.0)
+
+## Development
+
+This plugin contains only the server.
+
+Use `make` to check the style, test and build distributions of the plugin that you can upload to a Mattermost server.
+
+On the the server, change `EnableUploads` in the `PLugin Settings` to `true` in the file `config/config.json`
+
+Headover to `System Console` and upload the tar.gz file created in `dist/` directory to the plugins section.
+For help on how to install a custom plugin, please refer [installing custom plugin docs](https://docs.mattermost.com/administration/plugins.html#custom-plugins).
+
+Enable the plugin in the section `Installed Plugins` on the same page.
 
 
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
