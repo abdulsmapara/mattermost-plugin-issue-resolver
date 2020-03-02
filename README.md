@@ -85,12 +85,11 @@ The GIF below depicts the usage of ```/resolve```
 1. Alternatively, use `make` to check the style, test and build distributions of the plugin that you can upload to a Mattermost server (all at once).
 
 1. Use `make deploy` to deploy the plugin to your local server. Before running `make deploy`, you need to set a few environment variables:
-
-```
-	export MM_SERVICE_SETTINGS_SITEURL=http://localhost:8065
-	export MM_ADMIN_USERNAME=admin
-	export MM_ADMIN_PASSWORD=password
-```
+	```
+		export MM_SERVICE_SETTINGS_SITEURL=http://localhost:8065
+		export MM_ADMIN_USERNAME=admin
+		export MM_ADMIN_PASSWORD=password
+	```
 
 1. If you want to deploy the plugin by using `System Console`:
 
