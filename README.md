@@ -86,7 +86,7 @@ The GIF below depicts the usage of ```/resolve```
 
 1. Use `make deploy` to deploy the plugin to your local server. Before running `make deploy`, you need to set a few environment variables:
 	```
-		export MM_SERVICE_SETTINGS_SITEURL=http://localhost:8065
+		export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
 		export MM_ADMIN_USERNAME=admin
 		export MM_ADMIN_PASSWORD=password
 	```
