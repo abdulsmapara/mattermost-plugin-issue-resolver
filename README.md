@@ -93,14 +93,14 @@ The GIF below depicts the usage of ```/resolve```
 
 1. If you want to deploy the plugin by using `System Console`:
 	
-	2. On the the server, in the file `config/config.json`, change `EnableUploads` in the `PLugin Settings` to `true`
+	1. On the the server, in the file `config/config.json`, change `EnableUploads` in the `PLugin Settings` to `true`
 
-	2. Login to Mattermost server with admin privileges.
+	1. Login to Mattermost server with admin privileges.
 
-	2. Headover to `System Console` and upload the tar.gz file created in `dist/` directory to the plugins section.
+	1. Headover to `System Console` and upload the tar.gz file created in `dist/` directory to the plugins section.
 	For help on how to install a custom plugin, please refer [installing custom plugin docs](https://docs.mattermost.com/administration/plugins.html#custom-plugins).
 
-	2. Enable the plugin in the section `Installed Plugins` on the same page.
+	1. Enable the plugin in the section `Installed Plugins` on the same page.
 
 
 ## Hackathon [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
