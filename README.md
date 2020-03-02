@@ -19,6 +19,7 @@
      * [Idea Phase Submission](#idea-phase-submission)
      * [Project Submission](#project-submission)
 - [Demo Video](#demo-video)
+- [Road Map](#road-map)
 - [Additional Info](#additional-info)
 
 ## About the plugin
@@ -117,6 +118,13 @@ The GIF below depicts the usage of ```/resolve```
 ## Demo Video
 
 Link - [https://vimeo.com/394781065/](https://vimeo.com/394781065/)
+
+
+## Road Map
+
+- [ ] Make management of user's skills more user friendly.
+
+- [ ] Improve extracting keywords for search on stackoverflow and identification of domain for searching skilled users for better results.
 
 ## Additional Info
 
