@@ -18,8 +18,8 @@
 - [Hackathon-Mattermost-bot-hackfest](#hackathon-mattermost-bot-hackfest)
      * [Idea Phase Submission](#idea-phase-submission)
      * [Project Submission](#project-submission)
+     * [Prizes & Recognition](#prizes-and-recognition)
 - [Demo Video](#demo-video)
-- [Road Map](#road-map)
 - [Additional Info](#additional-info)
 
 ## About the plugin
@@ -115,21 +115,20 @@ The GIF below depicts the usage of ```/resolve```
 
 - Link to the pull request for submitting the project - [Project Submission](https://github.com/mattermost/mattermost-hackathon-hackerearth-jan2020/pull/13)
 
+#### Prizes and Recognition
+
+- Awarded the [Mattermost Swag Kit](https://mattermost.com/wp-content/uploads/2020/04/Mattermost-swag.png)
+- The project received an <b>Honorable Mention</b> at [Mattermost Blog Post](https://mattermost.com/blog/mattermost-bot-hackfest-winners/)
+- The project landed among the runners-up in the [Mattermost Bot Hackfest](https://www.hackerearth.com/challenges/hackathon/mattermost-bot-hackfest/)
+
 ## Demo Video
 
 Link - [https://vimeo.com/394781065/](https://vimeo.com/394781065/)
 
 
-## Road Map
-
-- [ ] Make management of user's skills more user friendly.
-
-- [ ] Improve extracting keywords for search on stackoverflow and identification of domain for searching skilled users for better results.
 
 ## Additional Info
 
 
 This plugin is created for demonstration of the idea submitted at [Mattermost Bot Hackfest](#hackathon-mattermost-bot-hackfest).
 
-
-The plugin is created by [@abdulsmapara](https://github.com/abdulsmapara).
